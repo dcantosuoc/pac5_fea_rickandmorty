@@ -1,0 +1,60 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ item.name }}</mat-card-title>
+    <mat-card-subtitle>{{ item.gender }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div [ngClass]="isExpand?'flex':'block'">
+      <div>
+        <img mat-card-image src='{{ item.image }}' alt="Character Photo">
+        <p class="center">
+          <span [ngClass]="item.status=='Alive'?'alive': item.status=='Dead'? 'dead' : 'unknown'">
+            {{ item.status }}
+          </span>
+        </p>
+      </div>
+      <div>
+        <div *ngIf="expand && isExpand">
+          <section [ngStyle]="{ 'margin-top': isExpand?'0':'1rem'}">
+            <div class="example-action-buttons">
+              <button mat-button (click)="accordion.openAll()">Expand All</button>
+              <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+            </div>
+            <mat-accordion class="example-headers-align" multi>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Geographical Data
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    <mat-icon>location_on</mat-icon>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Origin: {{ item.origin.name }}</p>
+                <p>Location: {{ item.location.name }}</p>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Additional data
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    <mat-icon>dataset</mat-icon>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Species: {{ item.status }}</p>
+                <p>Creation date: {{ item.created | date:"dd-MM-yyyy" }}</p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
+        </div>
+      </div>
+    </div>  
+    <section>
+      <div class="center">
+        <button *ngIf="expand && !isExpand" mat-flat-button color="primary" (click)="doExpand()">Show all details</button>
+        <button *ngIf="expand && isExpand" mat-flat-button color="primary" (click)="doReduce()">Hide details</button>
+      </div>
+    </section>  
+  </mat-card-content>
+</mat-card>

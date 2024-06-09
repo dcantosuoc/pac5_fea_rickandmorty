@@ -1,0 +1,47 @@
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  margin: 1rem;
+}
+
+.dead {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 25%;
+  text-align: center;
+}
+
+.alive {
+  background-color: green;
+  color: yellow;
+  padding: 0.5rem;
+  border-radius: 25%;
+  text-align: center;
+}
+
+.unknown {
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 25%;
+  text-align: center;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: block;
+}

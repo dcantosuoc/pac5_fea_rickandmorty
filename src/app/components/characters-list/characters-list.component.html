@@ -1,0 +1,46 @@
+<app-spinner [loading]="loading"></app-spinner>
+<div>
+  <h1 class="center">Character List</h1>
+  <div class="container">
+    <section>
+      <a *ngIf="info.prev" mat-icon-button (click)="prevPage()">
+        <mat-icon color="primary">arrow_circle_left</mat-icon>
+      </a>
+      <span class="mat-card-flat"> {{ page }} de {{ info.pages }} </span>
+      <a *ngIf="info.next" mat-icon-button (click)="nextPage()">
+        <mat-icon color="primary">arrow_circle_right</mat-icon>
+      </a>
+    </section>
+  </div>
+  <div class="select-view">
+    <section class="right">
+      <a mat-icon-button (click)="setListView()">
+        <mat-icon color="black">list</mat-icon>        
+      </a>
+      <a mat-icon-button (click)="setCardView()">
+        <mat-icon color="black">dashboard</mat-icon>
+      </a>
+    </section>
+  </div>
+
+  <div class="container" *ngIf="!cardView" [@fadInOut]>
+  <app-list class="full-width" (messageEvent)="getRecord($event)" [characters]="characters"></app-list>
+  </div>
+  <div class="container" *ngIf="cardView" [@fadInOut]>
+    <div class="card" *ngFor="let character of characters">
+      <app-card [item]="character" (click)="getRecord(character)" ></app-card>
+    </div>
+  </div>
+  <div class="container">
+    <section>
+      <a *ngIf="info.prev" mat-icon-button (click)="prevPage()">
+        <mat-icon color="primary">arrow_circle_left</mat-icon>
+      </a>
+      <span class="mat-card-flat"> {{ page }} de {{ info.pages }} </span>
+      <a *ngIf="info.next" mat-icon-button (click)="nextPage()">
+        <mat-icon color="primary">arrow_circle_right</mat-icon>
+      </a>
+    </section>
+  </div>
+</div>
+

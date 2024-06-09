@@ -1,0 +1,50 @@
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+section {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.card {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  width: auto;
+  height: auto;
+  margin: 2rem;
+}

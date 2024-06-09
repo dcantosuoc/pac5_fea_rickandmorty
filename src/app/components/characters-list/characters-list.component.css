@@ -1,0 +1,93 @@
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+table {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+span {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.card {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  width: auto;
+  height: auto;
+  margin: 2rem;
+}
+
+.avatar {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.select-view {
+  margin: 0;
+}
+
+.dead {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alive {
+  background-color: green;
+  color: yellow;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.unknown {
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+<app-spinner [loading]="loading"></app-spinner>
+<div>
+  <h1 class="center">Character Item {{ character.name }}</h1>
+  <div class="container">
+    <div class="card">
+      <app-card [item]="character" [expand]="true"></app-card>
+    </div>
+    <div class="center">
+      <section class="center">
+        <button mat-raised-button color="primary" (click)="goHome()" >Back</button>
+      </section>
+    </div>
+  </div>
+</div>
