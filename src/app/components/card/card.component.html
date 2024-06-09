@@ -15,7 +15,7 @@
       </div>
       <div>
         <div *ngIf="expand && isExpand">
-          <section [ngStyle]="{ 'margin-top': isExpand?'0':'1rem'}">
+          <section [ngStyle]="{ 'margin-top': isExpand ? '0' : '1rem'}">
             <div class="example-action-buttons">
               <button mat-button (click)="accordion.openAll()">Expand All</button>
               <button mat-button (click)="accordion.closeAll()">Collapse All</button>
