@@ -16,8 +16,8 @@ section {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 .center {
@@ -46,5 +46,5 @@ section {
   padding-bottom: 1rem;
   width: auto;
   height: auto;
-  margin: 2rem;
+  margin: 1rem;
 }

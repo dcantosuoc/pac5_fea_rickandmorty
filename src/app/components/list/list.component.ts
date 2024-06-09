@@ -9,7 +9,7 @@ import { Character } from 'src/app/models/character.interface';
 export class ListComponent {
   @Input() characters: Character[] = [];
   @Output() messageEvent = new EventEmitter<Character>();
-  displayedColumns: string[] = ['avatar', 'name', 'gender', 'status'];
+  displayedColumns: string[] = ['avatar', 'name', 'status'];
 
   getRecord(row: Character) {
     this.messageEvent.emit(row);
