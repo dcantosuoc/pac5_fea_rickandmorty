@@ -1,0 +1,41 @@
+{
+  "name": "pac5-pwa-rick-and-morty",
+  "short_name": "pac5-pwa-rick-and-morty",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icons/rick-sanchez-60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/rick-sanchez-120.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/rick-sanchez-240.png",
+      "sizes": "240x240",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/rick-sanchez-360.png",
+      "sizes": "360x360",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/rick-sanchez-480.png",
+      "sizes": "480x480",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
