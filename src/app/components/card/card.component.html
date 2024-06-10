@@ -6,7 +6,7 @@
   <mat-card-content>
     <div [ngClass]="isExpand?'flex':'block'">
       <div>
-        <img mat-card-image src='{{ item.image }}' alt="Character Photo">
+        <img mat-card-image src='{{ item.image }}' alt="Avatar of {{item.name}}">
         <p class="center">
           <span [ngClass]="item.status=='Alive'?'alive': item.status=='Dead'? 'dead' : 'unknown'">
             {{ item.status }}
